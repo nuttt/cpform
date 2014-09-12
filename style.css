@@ -1,12 +1,15 @@
-@font-face {
-    font-family: THSarabunNew;
-    src: url(font/THSarabunNew.ttf);
+/*@font-face {
+    font-family: "THSarabunNew";
+    src: url("font/THSarabunNew.ttf") format('truetype');
 }
 @font-face {
-    font-family: THSarabunNew;
+    font-family: "THSarabunNew";
     font-weight: 700;
-    src: url(font/THSarabunNew_bold.ttf);
-}
+    src: url("font/THSarabunNew_bold.ttf") format('truetype');
+}*/
+
+@import url(fonts/thsarabunnew.css);
+
 body{
   margin: 5mm 10mm;
   font-size: 70%;
@@ -17,10 +20,9 @@ body{
 h1,h2{
   font-weight: 700;
 }
-body{
-  font-family: THSarabunNew;
-  font-size: 100%;
-}
+
+body { font-family: 'THSarabunNew', sans-serif; font-size: 70%;} 
+
 td,th{
   font-size: 2.3em;
   padding: 0 5px;
@@ -47,6 +49,9 @@ table{
 .advisors td,
 .advisors th{
   padding: 14px 10px;
+}
+.advisors .line{
+  height: 30px;
 }
 .line{
   content: '&nbsp;';
