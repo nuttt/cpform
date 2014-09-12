@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>แบบฟอร์มกำหนดโครงการวิศวกรรมคอมพิวเตอร์</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" media="all" href="style.css">
+  <link rel="stylesheet" media="screen" href="style-screen.css">
+</head>
+<body>
+  <div class="container"> 
+    <h1 class="text-center">ภาควิชาวิศวกรรมคอมพิวเตอร์<br>คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</h1>
+
+    <h2 class="text-center">แบบฟอร์มกำหนดโครงการวิศวกรรมคอมพิวเตอร์<br>ประจำปีการศึกษา <span contenteditable="true">2557</span></h2>
+
+    <table class="project-name">
+      <tr>
+        <td>ชื่อโครงการ</td>
+        <td><span contenteditable="true">(ชื่อโครงการภาษาไทย)</span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><span contenteditable="true">(English Name)</span></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th></th>
+        <th width="40%">ชื่อ - นามสกุลนิสิต</th>
+        <th width="20%">เลขประจำตัว</th>
+        <th width="40%">ลายมือชื่อนิสิต</th>
+      </tr>
+      <tr class="top">
+        <td>1.</td>
+        <td><span contenteditable="true">(นาย/นางสาว...)</span></td>
+        <td class="text-center"><span contenteditable="true">(543xxxxx21)</span></td>
+        <td></td>
+      </tr>
+      <tr class="bottom">
+        <td></td>
+        <td><span contenteditable="true">(Mr./Miss ...)</span></td>
+        <td></td>
+        <td class="sign"><span class="line"></span></td>
+      </tr>
+      <tr class="top member2">
+        <td>2.</td>
+        <td><span contenteditable="true">(นาย/นางสาว...)</span></td>
+        <td class="text-center"><span contenteditable="true">(543xxxxx21)</span></td>
+        <td></td>
+      </tr>
+      <tr class="bottom member2">
+        <td></td>
+        <td><span contenteditable="true">(Mr./Miss ...)</span></td>
+        <td></td>
+        <td class="sign"><span class="line"></span></td>
+      </tr>
+      <tr class="top member3">
+        <td>3.</td>
+        <td><span contenteditable="true">(นาย/นางสาว...)</span></td>
+        <td class="text-center"><span contenteditable="true">(543xxxxx21)</span></td>
+        <td></td>
+      </tr>
+      <tr class="bottom member3">
+        <td></td>
+        <td><span contenteditable="true">(Mr./Miss ...)</span></td>
+        <td></td>
+        <td class="sign"><span class="line"></span></td>
+      </tr>
+    </table>
+
+    <table width="90%" class="advisors">
+      <thead>
+        <th colspan="2" width="50%">อาจารย์ที่ปรึกษาโครงงาน</th>
+        <th width="30%">ลายมือชื่อ</th>
+      </thead>
+      <tr>
+        <td class="text-right">(หลัก)</td>
+        <td><span contenteditable="true">(ชื่อ อ.ที่ปรึกษาหลัก)</span></td>
+        <td class="sign"><span class="line"></span></td>
+      </tr>
+      <tr id="ajarn">
+        <td class="text-right">(ร่วม)</td>
+        <td><span contenteditable="true">(ชื่อ อ.ที่ปรึกษาร่วม)</span></td>
+        <td class="sign"><span class="line"></span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="text-center">(<span contenteditable="true">วันที่</span> / <span contenteditable="true">เดือน</span> / <span contenteditable="true">ปี</span>)</td>
+      </tr>
+    </table>
+  </div>
+  <!-- /.container -->
+  
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script>
+  $(function(){
+    // $("body").hide();
+    nMember = prompt("จำนวนสมาชิกในกลุ่ม", "2");
+    if(nMember == "1" || nMember == "2")
+      $(".member3").hide();
+    if(nMember == "1")
+      $('.member2').hide();
+    $("body").fadeIn(200);
+
+    var r = confirm("มีอาจารย์ที่ปรึกษาร่วมหรือไม่");
+    if (r == false) {
+      $("#ajarn").hide();   
+    }
+  });
+  </script>
+</body>
+</html>

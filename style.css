@@ -1,0 +1,57 @@
+@font-face {
+    font-family: THSarabunNew;
+    src: url(font/THSarabunNew.ttf);
+}
+@font-face {
+    font-family: THSarabunNew;
+    font-weight: 700;
+    src: url(font/THSarabunNew_bold.ttf);
+}
+body{
+  margin: 5mm 10mm;
+  font-size: 70%;
+}
+.container{
+  width: auto;
+}
+h1,h2{
+  font-weight: 700;
+}
+body{
+  font-family: THSarabunNew;
+  font-size: 100%;
+}
+td,th{
+  font-size: 2.3em;
+  padding: 0 5px;
+  vertical-align: top;
+}
+th{
+  text-align: center;
+}
+.top td{
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+.bottom td{
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+.project-name td{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+table{
+  margin: 20px 0;
+}
+.advisors td,
+.advisors th{
+  padding: 14px 10px;
+}
+.line{
+  content: '&nbsp;';
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #000;
+}
